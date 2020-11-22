@@ -1,5 +1,5 @@
 public class Star {
-	private int x, y, color, size;
+	private int x, y, myColor, size;
 	
 	public Star() {
 		x = (int) (Math.random()*700);
