@@ -10,7 +10,7 @@ public class Star {
 	
 	public void show() {
 		noStroke();
-		fill(color);
+		fill(myColor);
 		ellipse(x, y, size, size);
 		fill(255);
 	}
