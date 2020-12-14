@@ -37,11 +37,11 @@ public void draw() {
     //Drawing the Asteroids
     for (int i = 0; i < asteroids.size(); i++) {
 	    
-	    Asteroid asteroid = asteroids.get(i);
+	    Asteroid thisAsteroid = asteroids.get(i);
 	    
-	    if (dist((float)asteroid.getX(), (float)asteroid.getY(), (float)ship.getX(), (float)ship.getY()) > killDist) {
-		    asteroid.move();
-		    asteroid.show();
+	    if (dist((float)thisAsteroid.getX(), (float)thisAsteroid.getY(), (float)ship.getX(), (float)ship.getY()) > killDist) {
+		    thisAsteroid.move();
+		    thisAsteroid.show();
 	    } else {
 		    asteroids.remove(i);
 	    }
